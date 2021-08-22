@@ -408,6 +408,7 @@ declare module 'ytdl-core' {
       isLive: boolean;
     }
 
+    function getSimpleInfo(url: string, options?: getInfoOptions): Promise<videoInfo>;
     function getBasicInfo(url: string, options?: getInfoOptions): Promise<videoInfo>;
     function getInfo(url: string, options?: getInfoOptions): Promise<videoInfo>;
     function downloadFromInfo(info: videoInfo, options?: downloadOptions): Readable;
